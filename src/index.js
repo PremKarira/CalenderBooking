@@ -27,20 +27,20 @@ class App extends React.Component {
                 },
                 {
                     title: "event 4",
-                    start: "2022-06-05",
-                    end: "2022-06-07",
+                    start: "2022-06-15",
+                    end: "2022-06-16",
                     allDay: true
                 },
                 {
                     title: "event 5",
-                    start: "2022-06-05",
-                    end: "2022-06-07",
+                    start: "2022-06-11",
+                    end: "2022-06-12",
                     allDay: true
                 },
                 {
                     title: "event 6",
-                    start: "2022-06-05",
-                    end: "2022-06-07",
+                    start: "2022-06-21",
+                    end: "2022-06-23",
                     allDay: true
                 }
             ]
@@ -72,7 +72,7 @@ class App extends React.Component {
             return ( < div >
                 <
 
-                FullCalendar schedulerLicenseKey = "GPL-My-Project-Is-Open-Source"
+                FullCalendar schedulerLicenseKey = "My-Project-Is-Open-Source"
                 ref = { this.calendarComponentRef }
                 defaultView = "dayGridMonth"
                 dateClick = { this.handleDateClick }
