@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+    --navHeight: 56px;
+    --warning-bg: #f5002e;
+    --alert-txt-clr: rgba(255, 255, 255, 0.9);
+    --alert-border-clr: rgba(255, 255, 255, 0.5);
+    --transition-duration: all 0.2s ease;
+    --input-border-width: 1px;
+    --input-padding: 10px;
+    --project-card-title: rgba(255, 255, 255, 0.85);
+}
+
+html {
+    scrollbar-color: var(--txt) transparent !important;
+    scrollbar-width: thin !important;
+}
+
+.glassmorphic {
+    align-content: center;
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    --scroll-behavior: smooth;
+}
+
+* button {
+    border-color: transparent;
+    background-color: transparent;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    outline: none !important;
+    text-transform: uppercase !important;
+    cursor: pointer;
+}
+
+* button:active {
+    -webkit-transform: scale(0.95) !important;
+    transform: scale(0.95) !important;
+    -webkit-transition: var(--transition-duration);
+    transition: var(--transition-duration);
+}
+
+* button:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    -webkit-transition: var(--transition-duration);
+    transition: var(--transition-duration);
+}
+
+nav {
+    align-content: center;
+    padding: 8px 0;
+    /* position: fixed; */
+    height: var(--navHeight);
+    background-color: var(--navBg);
+    -webkit-box-shadow: var(--navShadow);
+    box-shadow: var(--navShadow);
+    border-style: solid;
+    border-color: var(--navBorder);
+    z-index: 3;
+}
+
+nav .container {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+nav button {
+    border-radius: 50% !important;
+    cursor: pointer;
+}
+
+#root {
+    padding-top: 3cm;
+}
